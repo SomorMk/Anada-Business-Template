@@ -1,0 +1,104 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer{
+    padding: 120px 0 60px;
+    background: $c2;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 110%;
+        height: 300px;
+        background: url(../../images/shape.svg) no-repeat center/cover;
+        opacity: .1;
+        z-index: -1;
+    }
+
+    .footer_left{
+        img{
+            max-width: 150px;
+        }
+        p{
+            margin-top: 30px;
+            @include fs(#ccc,15px,400,$f1);
+        }
+    }
+
+    .footer_right{
+        h6{
+            @include fs(#fff,24px,700,$f1);
+            margin-bottom: 30px;
+        }
+        ul{
+            li{
+                line-height: 40px;
+                a{
+                    @include fs(#ccc,15px,600,$f1);
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #fff
+                    }
+                }
+            }
+        }
+        .footer_contact{
+            li{
+                @include fs(#ccc,15px,600,$f1);
+                line-height: 30px;
+                margin-bottom: 20px;
+                span{
+                    @include fs(#ccc,15px,900,$f1);
+                }
+            }
+        }
+        .social_icon{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin-right: 10px;
+                a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 5px;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        padding-top: 130px;
+        p{
+            @include fs(#ccc,15px,400,$f1);
+            a{
+                color: #437EEB;
+                text-decoration: underline;
+            }
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            li{
+                margin-left: 10px;
+                a{
+                    @include fs(#fff,15px,700,$f1);
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Footer css end
+=========================================================*/

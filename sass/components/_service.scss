@@ -1,0 +1,151 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Service css Start
+=========================================================*/
+#service {
+    padding: 60px 0;
+    background: $c1;
+
+    .service_head {
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+        .service_head_left {
+            h4 {
+                @include fs(#fff, 36px, 700, $f1);
+                text-transform: capitalize;
+                line-height: 44px;
+            }
+        }
+
+        .service_head_right {
+            p {
+                @include fs(#ccc, 15px, 400, $f1);
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+
+            .com_btn {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 28px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 1px dashed #fff;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    background: rgba(241, 241, 241, 0.2);
+                }
+            }
+        }
+    }
+
+    .service_body {
+        .service_slider {
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin: 0 5px;
+
+                    button {
+                        border: none;
+                        background: none;
+                        font-size: 0;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: rgba(204, 204, 204, 0.1);
+                    }
+
+                    &.slick-active {
+                        button {
+                            position: relative;
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 10px;
+                                height: 10px;
+                                background: $c3;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .service_item {
+                margin: 0 12px;
+                padding: 50px 30px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 6px;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: -25%;
+                    top: -25%;
+                    height: 300px;
+                    width: 300px;
+                    background: rgba(250, 250, 250, 0.1);
+                    z-index: -1;
+                    transform: rotate(45deg);
+                    border-radius: 20px;
+                }
+
+                .image {
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                    img {
+                        max-width: 200px;
+                        height: 200px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .text {
+                    text-align: center;
+
+                    h5 {
+                        @include fs(#fff, 20px, 700, $f1);
+                        text-transform: capitalize;
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        @include fs(rgba(255, 255, 255, 0.5), 15px, 400, $f1);
+                        line-height: 24px;
+                        padding: 0 30px;
+                        margin-bottom: 25px;
+                    }
+
+                    .com_btn {
+                        background: transparent;
+                        border: 1px solid #ffffff80;
+
+                        &:hover {
+                            border-color: transparent;
+                            background: #ffffff80;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=========================================================
+                    Service css end
+=========================================================*/

@@ -1,0 +1,217 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Nav css Start
+=========================================================*/
+.navbar{
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all linear .3s;
+
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+    &.menu_fix{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        padding: 2px 0;
+        background: #0C3543;
+    }
+
+    &.menu_fix{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        background: $c2;
+        transition: all linear .3s;
+    }
+
+    .navbar-nav{
+        margin-right: 20px;
+        .nav-item{
+            margin-left: 30px;
+            position: relative;
+            &:hover{
+                >ul{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 170%;
+                }
+            }
+            .nav-link{
+                @include fs(#fff,13px,800,$f1);
+                text-transform: uppercase;
+                position: relative;
+                i{
+                    position: absolute;
+                    right: -5px;
+                    top: 48%;
+                    transform: translateY(-50%);
+                    font-size: 10px;
+                }
+            }
+            ul{
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 250px;
+                background: #fff;
+                border-radius: 3px;
+                transition: all linear .5s;
+                li{
+                    position: relative;
+                    a{
+                        @include fs(#333,14px,600,$f1);
+                        padding: 15px 15px;
+                        width: 100%;
+                        border-bottom: 1px solid #f5f5f5;
+                        transition: all linear .2s;
+                        position: relative;
+                        &:hover{
+                            color: $c3;
+                        }
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            right: 20px;
+                            transform: translateY(-50%);
+                            font-size: 10px;
+                        }
+                        span{
+                            padding: 3px 10px;
+                            text-align: center;
+                            background: $c3;
+                            font-size: 8px;
+                            border-radius: 5px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            margin-left: 10px;
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            border-bottom: none;
+                        }
+                    }
+                    ul{
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        box-shadow: 0 0 5px 0 #635f5f;
+                        transition: all .5s;
+                    }
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                            visibility: visible;
+                            top: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav_right{
+        border-left: 1px solid #fff;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin-left: 20px;
+                a{
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+    width: 25px;
+    height: 40px;
+    position: relative;
+    // margin: 50px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1,
+#nav-icon3,
+#nav-icon4 {
+    span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: linear-gradient(to right, #225AC2, #437EEB);
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+}
+
+#nav-icon1 {
+    span {
+        &:nth-child(1) {
+            top: 10px;
+        }
+
+        &:nth-child(2) {
+            top: 18px;
+        }
+
+        &:nth-child(3) {
+            top: 26px;
+        }
+    }
+}
+
+#nav-icon1.open {
+    span {
+        &:nth-child(1) {
+            top: 18px;
+            transform: rotate(135deg);
+        }
+
+        &:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+        }
+
+        &:nth-child(3) {
+            top: 18px;
+            transform: rotate(-135deg);
+        }
+    }
+}
+/*=========================================================
+                    Nav css end
+=========================================================*/

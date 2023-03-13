@@ -1,0 +1,114 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    News css Start
+=========================================================*/
+#news{
+    padding: 60px 0;
+    background: $c1;
+
+    .news_head {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    
+        .news_head_left {
+            h4 {
+                @include fs(#fff, 36px, 700, $f1);
+                text-transform: capitalize;
+                line-height: 44px;
+            }
+        }
+    
+        .news_head_right {
+            p {
+                @include fs(#ccc, 15px, 400, $f1);
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+    
+            .com_btn {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 28px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 1px dashed #fff;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    background: rgba(241, 241, 241, 0.2);
+                }
+            }
+        }
+    }
+
+    .news_body{
+        .news_item{
+            border-radius: 20px;
+            .image{
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+            .text{
+                padding: 50px 30px 30px;
+                background: $c2;
+                position: relative;
+                border-radius: 0 0 20px 20px;
+                .date{
+                    position: absolute;
+                    top: -60px;
+                    left: 30px;
+                    width: 100px;
+                    height: 90px;
+                    background: #fff;
+                    border-radius: 5px;
+                    p{
+                        @include fs(#232323, 15px, 600, $f1);
+                        text-align: center;
+                        padding-top: 20px;
+                        span{
+                            font-weight: 900;
+                            display: block;
+                        }
+                    }
+                }
+                p{
+                    color: #ccc;
+                    margin-bottom: 20px;
+                    i{
+                        color: $c3;
+                        margin-right: 10px;
+                    }
+                    a{
+                        @include fs(#ccc, 13px, 700, $f1);
+                        text-transform: uppercase;
+                        margin: 0 5px;
+                    }
+                }
+                h5{
+                    @include fs(#fff, 24px, 700, $f1);
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include fs(#ccc, 15px, 400, $f1);
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                }
+                .com_btn{
+                    i{
+                        margin-right: 10px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    News css end
+=========================================================*/

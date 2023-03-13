@@ -1,0 +1,1096 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+.com_btn {
+  padding: 15px 40px;
+  background-image: linear-gradient(90deg, rgb(30, 85, 189) 0%, rgb(67, 126, 235) 100%);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+.com_btn:hover {
+  color: #fff;
+  background-image: linear-gradient(90deg, rgb(67, 126, 235) 0%, rgb(30, 85, 189) 100%);
+}
+
+.com_head {
+  text-align: center;
+}
+.com_head h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline;
+}
+.com_head h6::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 8px;
+  background: rgba(204, 204, 204, 0.2);
+}
+.com_head h4 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+
+/*=========================================================
+                    Common css end
+=========================================================*/
+/*=========================================================
+                    Nav css Start
+=========================================================*/
+.navbar {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  transition: all linear 0.3s;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+.navbar.menu_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  padding: 2px 0;
+  background: #0C3543;
+}
+.navbar.menu_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background: #0D152E;
+  transition: all linear 0.3s;
+}
+.navbar .navbar-nav {
+  margin-right: 20px;
+}
+.navbar .navbar-nav .nav-item {
+  margin-left: 30px;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 170%;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item .nav-link i {
+  position: absolute;
+  right: -5px;
+  top: 48%;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+.navbar .navbar-nav .nav-item ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all linear 0.5s;
+}
+.navbar .navbar-nav .nav-item ul li {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item ul li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  padding: 15px 15px;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all linear 0.2s;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item ul li a:hover {
+  color: #437EEB;
+}
+.navbar .navbar-nav .nav-item ul li a i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+.navbar .navbar-nav .nav-item ul li a span {
+  padding: 3px 10px;
+  text-align: center;
+  background: #437EEB;
+  font-size: 8px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.navbar .navbar-nav .nav-item ul li:last-child a {
+  border-bottom: none;
+}
+.navbar .navbar-nav .nav-item ul li ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  box-shadow: 0 0 5px 0 #635f5f;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 15%;
+}
+.navbar .nav_right {
+  border-left: 1px solid #fff;
+}
+.navbar .nav_right ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar .nav_right ul li {
+  margin-left: 20px;
+}
+.navbar .nav_right ul li a i {
+  color: #fff;
+}
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+  width: 25px;
+  height: 40px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #225AC2, #437EEB);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 10px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 26px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
+/*=========================================================
+                    Nav css end
+=========================================================*/
+/*=========================================================
+                    Banner css Start
+=========================================================*/
+#banner {
+  height: 100vh;
+  background: #101C3D;
+}
+#banner .banner_text {
+  padding: 190px 0;
+  text-align: center;
+}
+#banner .banner_text h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+  line-height: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+#banner .banner_text h6 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 200;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+#banner .banner_text .input_area {
+  margin: 0 auto;
+  width: 510px;
+  height: 60px;
+  position: relative;
+}
+#banner .banner_text .input_area input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  padding-left: 20px;
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI";
+}
+#banner .banner_text .input_area a {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background: linear-gradient(to right, #225AC2, #437EEB);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+#banner .banner_text .input_area a i {
+  color: #fff;
+  margin-left: 4px;
+}
+
+/*=========================================================
+                    Banner css end
+=========================================================*/
+/*=========================================================
+                    About css Start
+=========================================================*/
+#about {
+  padding: 120px 0 60px;
+  background: #0D152E;
+}
+#about .about_left img {
+  width: 100%;
+  max-width: 100%;
+}
+#about .about_right h4 {
+  color: #437EEB;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+#about .about_right h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+}
+#about .about_right p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+#about .about_right ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#about .about_right ul li {
+  width: 50%;
+}
+#about .about_right ul li h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 15px;
+}
+#about .about_right ul li h5 i {
+  color: #437EEB;
+  font-size: 14px;
+  margin-right: 10px;
+}
+#about .about_right ul li p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 24px;
+  max-width: 80%;
+}
+
+/*=========================================================
+                    About css end
+=========================================================*/
+/*=========================================================
+                      Features css Start
+=========================================================*/
+#features {
+  padding: 60px 0;
+  background: #0D152E;
+}
+#features .feature_item {
+  padding: 40px 40px 60px;
+  background: linear-gradient(to bottom, #093ac1 0%, #437eeb 100%);
+  border-radius: 15px;
+  position: relative;
+  transition: all linear 0.2s;
+  overflow: hidden;
+}
+#features .feature_item::after {
+  position: absolute;
+  content: "";
+  top: -40px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  background: #6493D9;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all linear 0.2s;
+}
+#features .feature_item::before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
+  background: #4C80DC;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all linear 0.3s;
+}
+#features .feature_item:hover {
+  background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+}
+#features .feature_item:hover::after, #features .feature_item:hover::before {
+  transform: scale(1.5);
+}
+#features .feature_item i {
+  color: #fff;
+  font-size: 60px;
+}
+#features .feature_item h6 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#features .feature_item ul li {
+  color: #F8F9FA;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  margin: 15px 0;
+}
+#features .feature_item ul li i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/*=========================================================
+                      Features css end
+=========================================================*/
+/*=========================================================
+                    Skill css Start
+=========================================================*/
+#skill {
+  padding: 60px 0 120px;
+  background: #0D152E;
+}
+#skill .skill_left h5 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+#skill .skill_left h6 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+#skill .skill_left p {
+  color: #CCCCCC;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+#skill .skill_left ul li {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 30px 0;
+  position: relative;
+}
+#skill .skill_left ul li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#skill .skill_left ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+#skill .skill_left ul li::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  background: #437EEB;
+  z-index: 2;
+  border-radius: 5px;
+}
+#skill .skill_left ul li:first-child::before {
+  width: 88%;
+}
+#skill .skill_left ul li:nth-child(2)::before {
+  width: 95%;
+}
+#skill .skill_left ul li:nth-child(3)::before {
+  width: 70%;
+}
+#skill .skill_right {
+  position: relative;
+  margin-left: 10px;
+}
+#skill .skill_right .image1 {
+  width: 405px;
+  height: 405px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#skill .skill_right .image2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  box-shadow: 0 0 5px 0 #f1f1f1;
+  z-index: 1;
+}
+#skill .skill_right::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 30px;
+  height: 500px;
+  width: 500px;
+  border: 50px solid #437eeb;
+  opacity: 0.07;
+  border-radius: 50%;
+}
+
+/*=========================================================
+                    Skill css end
+=========================================================*/
+/*=========================================================
+                    Service css Start
+=========================================================*/
+#service {
+  padding: 60px 0;
+  background: #101C3D;
+}
+#service .service_head {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+#service .service_head .service_head_left h4 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  line-height: 44px;
+}
+#service .service_head .service_head_right p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#service .service_head .service_head_right .com_btn i {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px dashed #fff;
+  margin-left: 10px;
+  font-size: 14px;
+  background: rgba(241, 241, 241, 0.2);
+}
+#service .service_body .service_slider .slick-dots {
+  display: flex;
+  justify-content: center;
+}
+#service .service_body .service_slider .slick-dots li {
+  margin: 0 5px;
+}
+#service .service_body .service_slider .slick-dots li button {
+  border: none;
+  background: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(204, 204, 204, 0.1);
+}
+#service .service_body .service_slider .slick-dots li.slick-active button {
+  position: relative;
+}
+#service .service_body .service_slider .slick-dots li.slick-active button::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #437EEB;
+  border-radius: 50%;
+}
+#service .service_body .service_slider .service_item {
+  margin: 0 12px;
+  padding: 50px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#service .service_body .service_slider .service_item::after {
+  position: absolute;
+  content: "";
+  left: -25%;
+  top: -25%;
+  height: 300px;
+  width: 300px;
+  background: rgba(250, 250, 250, 0.1);
+  z-index: -1;
+  transform: rotate(45deg);
+  border-radius: 20px;
+}
+#service .service_body .service_slider .service_item .image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#service .service_body .service_slider .service_item .image img {
+  max-width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+#service .service_body .service_slider .service_item .text {
+  text-align: center;
+}
+#service .service_body .service_slider .service_item .text h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+#service .service_body .service_slider .service_item .text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 24px;
+  padding: 0 30px;
+  margin-bottom: 25px;
+}
+#service .service_body .service_slider .service_item .text .com_btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+}
+#service .service_body .service_slider .service_item .text .com_btn:hover {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.5019607843);
+}
+
+/*=========================================================
+                    Service css end
+=========================================================*/
+/*=========================================================
+                    Team css Start
+=========================================================*/
+#team {
+  padding: 60px 0;
+  background: #0D152E;
+}
+#team .team_row {
+  margin-top: 50px;
+}
+#team .team_row .team_item:hover .image .overlay {
+  top: 20px;
+  right: 20px;
+}
+#team .team_row .team_item .image {
+  overflow: hidden;
+  position: relative;
+}
+#team .team_row .team_item .image img {
+  width: 100%;
+  max-width: 100%;
+}
+#team .team_row .team_item .image .overlay {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  transition: all linear 0.3s;
+}
+#team .team_row .team_item .image .overlay ul li {
+  margin-bottom: 10px;
+}
+#team .team_row .team_item .image .overlay ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #437EEB;
+  border-radius: 50%;
+}
+#team .team_row .team_item .text {
+  text-align: center;
+  background: #101C3D;
+  padding: 30px;
+}
+#team .team_row .team_item .text h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 10px;
+}
+#team .team_row .team_item .text p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+/*=========================================================
+                    Team css end
+=========================================================*/
+/*=========================================================
+                    Pricing css Start
+=========================================================*/
+#pricing {
+  padding: 60px 0;
+  background: #0D152E;
+}
+#pricing .pricing_row .pricing_item {
+  padding: 50px 30px;
+  background: #101C3D;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 60px;
+}
+#pricing .pricing_row .pricing_item .image {
+  text-align: center;
+  margin-bottom: 25px;
+}
+#pricing .pricing_row .pricing_item .image img {
+  max-width: 150px;
+}
+#pricing .pricing_row .pricing_item .text {
+  text-align: center;
+  padding: 0 60px;
+}
+#pricing .pricing_row .pricing_item .text h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+#pricing .pricing_row .pricing_item .text p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+#pricing .pricing_row .pricing_item .text p span {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+#pricing .pricing_row .pricing_item .text ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+#pricing .pricing_row .pricing_item .text ul li {
+  position: relative;
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  padding-left: 30px;
+  line-height: 40px;
+}
+#pricing .pricing_row .pricing_item .text ul li i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#pricing .pricing_row .pricing_item .text ul li i.fa-xmark {
+  color: red;
+}
+#pricing .pricing_row .pricing_item .text ul li i.fa-check {
+  color: green;
+}
+
+/*=========================================================
+                    Pricing css end
+=========================================================*/
+/*=========================================================
+                    News css Start
+=========================================================*/
+#news {
+  padding: 60px 0;
+  background: #101C3D;
+}
+#news .news_head {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+#news .news_head .news_head_left h4 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  line-height: 44px;
+}
+#news .news_head .news_head_right p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#news .news_head .news_head_right .com_btn i {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px dashed #fff;
+  margin-left: 10px;
+  font-size: 14px;
+  background: rgba(241, 241, 241, 0.2);
+}
+#news .news_body .news_item {
+  border-radius: 20px;
+}
+#news .news_body .news_item .image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+#news .news_body .news_item .text {
+  padding: 50px 30px 30px;
+  background: #0D152E;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+#news .news_body .news_item .text .date {
+  position: absolute;
+  top: -60px;
+  left: 30px;
+  width: 100px;
+  height: 90px;
+  background: #fff;
+  border-radius: 5px;
+}
+#news .news_body .news_item .text .date p {
+  color: #232323;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+#news .news_body .news_item .text .date p span {
+  font-weight: 900;
+  display: block;
+}
+#news .news_body .news_item .text p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+#news .news_body .news_item .text p i {
+  color: #437EEB;
+  margin-right: 10px;
+}
+#news .news_body .news_item .text p a {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+#news .news_body .news_item .text h5 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+#news .news_body .news_item .text p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#news .news_body .news_item .text .com_btn i {
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+/*=========================================================
+                    News css end
+=========================================================*/
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer {
+  padding: 120px 0 60px;
+  background: #0D152E;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#footer::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 110%;
+  height: 300px;
+  background: url(../../images/shape.svg) no-repeat center/cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+#footer .footer_left img {
+  max-width: 150px;
+}
+#footer .footer_left p {
+  margin-top: 30px;
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+#footer .footer_right h6 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 30px;
+}
+#footer .footer_right ul li {
+  line-height: 40px;
+}
+#footer .footer_right ul li a {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  transition: all linear 0.3s;
+}
+#footer .footer_right ul li a:hover {
+  color: #fff;
+}
+#footer .footer_right .footer_contact li {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+#footer .footer_right .footer_contact li span {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+}
+#footer .footer_right .social_icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .footer_right .social_icon li {
+  margin-right: 10px;
+}
+#footer .footer_right .social_icon li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+#footer .footer_right .social_icon li a i {
+  color: #fff;
+}
+#footer .footer_bottom {
+  padding-top: 130px;
+}
+#footer .footer_bottom p {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+#footer .footer_bottom p a {
+  color: #437EEB;
+  text-decoration: underline;
+}
+#footer .footer_bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+#footer .footer_bottom ul li {
+  margin-left: 10px;
+}
+#footer .footer_bottom ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+/*=========================================================
+                    Footer css end
+=========================================================*//*# sourceMappingURL=style.css.map */

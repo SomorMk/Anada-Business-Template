@@ -1,0 +1,1047 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .navbar-brand img {
+        padding: 0 10px;
+        max-width: 110px;
+    }
+
+    .navbar .nav_right {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        background: #ffff;
+        margin-right: 0;
+        padding-right: 30px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: #000;
+        font-size: 12px;
+    }
+
+
+
+
+    #banner .banner_text {
+        padding: 145px 0;
+    }
+
+
+
+
+    #about .about_left{
+        text-align: center;
+    }
+    #about .about_left img {
+        width: 100%;
+        max-width: 80%;
+    }
+
+
+
+    #features .feature_item {
+        padding: 40px 20px 40px;
+    }
+    #features .feature_item h6 {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    #skill {
+        padding: 60px 0 60px;
+    }
+    #skill .skill_right {
+        margin-left: 0;
+    }
+    #skill .skill_right .image1 {
+        height: auto;
+        max-width: 65%;
+        top: 80px;
+    }
+    #skill .skill_right .image2 {
+        height: auto;
+        top: 290px;
+        right: 0px;
+        max-width: 65%;
+    }
+    #skill .skill_right::after {
+        right: 0px;
+    }
+
+
+
+
+    #team .team_row .team_item{
+        margin-bottom: 24px;
+    }
+    #team .team_row .team_item .image .overlay {
+        top: 20px;
+        right: 20px;
+    }
+    #team {
+        padding: 60px 0 0;
+    }
+
+
+
+
+
+    #pricing .pricing_row .pricing_item .text {
+        padding: 0;
+    }
+    #pricing .pricing_row .pricing_item .image img {
+        max-width: 100px;
+    }
+    #pricing .pricing_row .pricing_item .com_btn {
+        font-size: 10px;
+    }
+    #news .news_body .news_item .text {
+        padding: 50px 10px 30px;
+        text-align: center;
+    }
+    #news .news_body .news_item .text p a {
+        font-size: 11px;
+    }
+    #news .news_body .news_item .text h5 {
+        font-size: 18px;
+        text-align: left;
+    }
+    #news .news_body .news_item .text p {
+        font-size: 13px;
+        line-height: 24px;
+        text-align: left;
+    }
+    #news .news_body .news_item .com_btn {
+        font-size: 10px;
+    }
+
+
+
+
+    #news .news_body .news_item .text .date p {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    #news .news_body .news_item .text .date {
+        top: -40px;
+        width: 80px;
+        height: 75px;
+    }
+
+
+
+
+    #footer {
+        padding: 60px 0 30px;
+    }
+    #footer .footer_right{
+        margin-top: 30px;
+    }
+    #footer .footer_right h6 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #footer .footer_right ul li {
+        line-height: 30px;
+    }
+    #footer .footer_right .footer_contact li {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #footer .footer_bottom {
+        padding-top: 70px;
+    }
+    #footer .footer_bottom p {
+        font-size: 13px;
+    }
+    #footer .footer_bottom ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .navbar-brand img {
+        padding: 0 10px;
+        max-width: 110px;
+    }
+
+    .navbar .nav_right {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        background: #ffff;
+        margin-right: 0;
+        padding-right: 30px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: #000;
+        font-size: 12px;
+    }
+
+
+
+
+
+    #banner .banner_text h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    #banner .banner_text {
+        padding: 160px 0;
+    }
+
+    #banner .banner_text h6 {
+        font-size: 20px;
+    }
+
+    #banner .banner_text .input_area {
+        width: 80%;
+        height: 50px;
+    }
+
+    #banner .banner_text .input_area a {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    #banner .banner_text .input_area input {
+        font-size: 12px;
+    }
+
+
+
+
+    #about .about_left {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #about .about_left img {
+        max-width: 85%;
+    }
+
+    #about {
+        padding: 60px 0 0px;
+    }
+
+    #about .about_right {
+        text-align: center;
+    }
+
+    #about .about_right h4 {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    #about .about_right h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    #about .about_right p {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    #about .about_right ul {
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    #about .about_right ul li {
+        width: 100%;
+    }
+
+    #about .about_right ul li h5 {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #about .about_right ul li p {
+        font-size: 14px;
+        max-width: 100%;
+        padding-left: 25px;
+    }
+
+
+
+
+    .com_btn {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+
+
+
+    #features {
+        padding: 60px 15px;
+    }
+
+    #features .feature_item {
+        padding: 25px 40px 25px;
+        margin-bottom: 24px;
+    }
+
+    #features .feature_item h6 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    #features .feature_item ul li {
+        font-size: 13px;
+    }
+
+    #features .feature_item ul li i {
+        font-size: 12px;
+    }
+
+    #skill {
+        padding: 0px 0 20px;
+    }
+
+    #skill .skill_left {
+        padding: 0 15px;
+    }
+
+    #skill .skill_left h6 {
+        font-size: 20px;
+    }
+
+    #skill .skill_left p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #skill .skill_left ul li {
+        font-size: 12px;
+    }
+
+    #skill .skill_right {
+        display: none;
+    }
+
+
+
+
+
+    #service {
+        padding: 0 15px 60px;
+    }
+
+    #service .service_head .service_head_left h4 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    #service .service_head .service_head_right p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #service .service_head .service_head_right .com_btn i {
+        width: 22px;
+        height: 21px;
+        line-height: 19px;
+        font-size: 10px;
+    }
+
+    #service .service_body .service_slider .service_item .image img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    #service .service_body .service_slider .service_item .text p {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #service .service_body .service_slider .service_item {
+        padding: 20px 20px;
+    }
+
+    #service .service_body .service_slider .service_item::after {
+        height: 250px;
+        width: 250px;
+    }
+
+    #service .service_body .service_slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    #service .service_body .service_slider .slick-dots li.slick-active button::after {
+        width: 6px;
+        height: 6px;
+    }
+
+
+
+
+    .com_head h6 {
+        font-size: 18px;
+    }
+
+    .com_head h4 {
+        margin-top: 15px;
+        font-size: 28px;
+    }
+
+    #team .team_row {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    #team .team_row .team_item .image .overlay {
+        top: 20px;
+        right: 20px;
+    }
+
+    #team .team_row .team_item .image .overlay ul li a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+    }
+
+    #team .team_row .team_item .text {
+        padding: 15px 20px;
+    }
+
+    #team .team_row .team_item .text h6 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #team .team_row .team_item .text p {
+        font-size: 12px;
+    }
+
+    #team .team_row .team_item {
+        margin-bottom: 24px;
+    }
+
+    #team {
+        padding: 60px 0 0;
+    }
+
+
+
+
+
+
+    #pricing .pricing_row .pricing_item {
+        padding: 30px 0px;
+        margin-top: 30px;
+    }
+
+    #pricing .pricing_row .pricing_item .image img {
+        max-width: 100px;
+    }
+
+    #pricing .pricing_row .pricing_item .text p span {
+        font-size: 40px;
+    }
+
+    #pricing .pricing_row .pricing_item .text h6 {
+        margin-bottom: 0px;
+    }
+
+    #pricing .pricing_row .pricing_item .text {
+        padding: 0 40px;
+    }
+
+
+
+
+
+    #news {
+        padding: 60px 15px 20px;
+    }
+
+    #news .news_head {
+        padding-top: 0;
+    }
+
+    #news .news_head .news_head_left h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #news .news_head .news_head_right p {
+        font-size: 13px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    #news .news_head .news_head_right .com_btn i {
+        width: 22px;
+        height: 21px;
+        line-height: 19px;
+        font-size: 10px;
+    }
+
+    #news .news_body .news_item .text p a {
+        font-size: 10px;
+    }
+
+    #news .news_body .news_item .text p i {
+        margin-right: 5px;
+    }
+
+    #news .news_body .news_item .text h5 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    #news .news_body .news_item .text p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #news .news_body .news_item .text .date p {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    #news .news_body .news_item .text .date {
+        top: -40px;
+        width: 80px;
+        height: 70px;
+    }
+
+    #news .news_body .news_item {
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+    #footer {
+        padding: 60px 15px 60px;
+    }
+
+    #footer .footer_left p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    #footer .footer_right h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #footer .footer_right ul {
+        margin-bottom: 24px;
+    }
+
+    #footer .footer_right ul li {
+        line-height: 26px;
+    }
+
+    #footer .footer_right ul li a {
+        font-size: 12px;
+    }
+
+    #footer .footer_right .footer_contact li {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    #footer .footer_right .social_icon li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #footer .footer_bottom {
+        padding-top: 40px;
+    }
+
+    #footer .footer_bottom p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #footer .footer_bottom ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    #footer .footer_bottom ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar .navbar-brand img {
+        padding: 0 10px;
+        max-width: 110px;
+    }
+
+    .navbar .nav_right {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        background: #ffff;
+        margin-right: 0;
+        padding-right: 30px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: #000;
+        font-size: 12px;
+    }
+
+
+
+
+
+    #banner .banner_text h1 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    #banner .banner_text {
+        padding: 140px 0;
+    }
+
+    #banner .banner_text h6 {
+        font-size: 20px;
+    }
+
+    #banner .banner_text .input_area {
+        width: 100%;
+        height: 50px;
+    }
+
+    #banner .banner_text .input_area a {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    #banner .banner_text .input_area input {
+        font-size: 12px;
+    }
+
+
+
+
+    #about .about_left {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #about .about_left img {
+        max-width: 85%;
+    }
+
+    #about {
+        padding: 60px 0 0px;
+    }
+
+    #about .about_right {
+        text-align: center;
+    }
+
+    #about .about_right h4 {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    #about .about_right h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    #about .about_right p {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    #about .about_right ul {
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    #about .about_right ul li {
+        width: 100%;
+    }
+
+    #about .about_right ul li h5 {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #about .about_right ul li p {
+        font-size: 14px;
+        max-width: 100%;
+        padding-left: 25px;
+    }
+
+
+
+
+    .com_btn {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+
+
+
+    #features {
+        padding: 60px 15px;
+    }
+
+    #features .feature_item {
+        padding: 25px 40px 25px;
+        margin-bottom: 24px;
+    }
+
+    #features .feature_item h6 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    #features .feature_item ul li {
+        font-size: 13px;
+    }
+
+    #features .feature_item ul li i {
+        font-size: 12px;
+    }
+
+    #skill {
+        padding: 0px 0 20px;
+    }
+
+    #skill .skill_left {
+        padding: 0 15px;
+    }
+
+    #skill .skill_left h6 {
+        font-size: 20px;
+    }
+
+    #skill .skill_left p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #skill .skill_left ul li {
+        font-size: 12px;
+    }
+
+    #skill .skill_right {
+        display: none;
+    }
+
+
+
+
+
+    #service {
+        padding: 0 15px 60px;
+    }
+
+    #service .service_head .service_head_left h4 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    #service .service_head .service_head_right p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #service .service_head .service_head_right .com_btn i {
+        width: 22px;
+        height: 21px;
+        line-height: 19px;
+        font-size: 10px;
+    }
+
+    #service .service_body .service_slider .service_item .image img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    #service .service_body .service_slider .service_item .text p {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #service .service_body .service_slider .service_item {
+        padding: 20px 20px;
+    }
+
+    #service .service_body .service_slider .service_item::after {
+        height: 250px;
+        width: 250px;
+    }
+
+    #service .service_body .service_slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    #service .service_body .service_slider .slick-dots li.slick-active button::after {
+        width: 6px;
+        height: 6px;
+    }
+
+
+
+
+    .com_head h6 {
+        font-size: 18px;
+    }
+
+    .com_head h4 {
+        margin-top: 15px;
+        font-size: 28px;
+    }
+
+    #team .team_row {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    #team .team_row .team_item .image .overlay {
+        top: 20px;
+        right: 20px;
+    }
+
+    #team .team_row .team_item .image .overlay ul li a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+    }
+
+    #team .team_row .team_item .text {
+        padding: 15px 20px;
+    }
+
+    #team .team_row .team_item .text h6 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #team .team_row .team_item .text p {
+        font-size: 12px;
+    }
+
+    #team .team_row .team_item {
+        margin-bottom: 24px;
+    }
+
+    #team {
+        padding: 60px 0 0;
+    }
+
+
+
+
+
+
+    #pricing .pricing_row .pricing_item {
+        padding: 30px 0px;
+        margin-top: 30px;
+    }
+
+    #pricing .pricing_row .pricing_item .image img {
+        max-width: 100px;
+    }
+
+    #pricing .pricing_row .pricing_item .text p span {
+        font-size: 40px;
+    }
+
+    #pricing .pricing_row .pricing_item .text h6 {
+        margin-bottom: 0px;
+    }
+
+    #pricing .pricing_row .pricing_item .text {
+        padding: 0 40px;
+    }
+
+
+
+
+
+    #news {
+        padding: 60px 15px 20px;
+    }
+
+    #news .news_head {
+        padding-top: 0;
+    }
+
+    #news .news_head .news_head_left h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #news .news_head .news_head_right p {
+        font-size: 13px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    #news .news_head .news_head_right .com_btn i {
+        width: 22px;
+        height: 21px;
+        line-height: 19px;
+        font-size: 10px;
+    }
+
+    #news .news_body .news_item .text p a {
+        font-size: 10px;
+    }
+
+    #news .news_body .news_item .text p i {
+        margin-right: 5px;
+    }
+
+    #news .news_body .news_item .text h5 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    #news .news_body .news_item .text p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    #news .news_body .news_item .text .date p {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    #news .news_body .news_item .text .date {
+        top: -40px;
+        width: 80px;
+        height: 70px;
+    }
+
+    #news .news_body .news_item {
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+    #footer {
+        padding: 60px 15px 60px;
+    }
+
+    #footer .footer_left p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    #footer .footer_right h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #footer .footer_right ul {
+        margin-bottom: 24px;
+    }
+
+    #footer .footer_right ul li {
+        line-height: 26px;
+    }
+
+    #footer .footer_right ul li a {
+        font-size: 12px;
+    }
+
+    #footer .footer_right .footer_contact li {
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    #footer .footer_right .social_icon li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #footer .footer_bottom {
+        padding-top: 40px;
+    }
+
+    #footer .footer_bottom p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #footer .footer_bottom ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    #footer .footer_bottom ul li a {
+        font-size: 12px;
+    }
+}

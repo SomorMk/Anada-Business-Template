@@ -1,0 +1,68 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Team css Start
+=========================================================*/
+#team{
+    padding: 60px 0;
+    background: $c2;
+
+    .team_row{
+        margin-top: 50px;
+        .team_item{
+            &:hover{
+                .image{
+                    .overlay{
+                        top: 20px;
+                        right: 20px;
+                    }
+                }
+            }
+            .image{
+                overflow: hidden;
+                position: relative;
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .overlay{
+                    position: absolute;
+                    top: -50px;
+                    right: -50px;
+                    transition: all linear .3s;
+                    ul{
+                        li{
+                            margin-bottom: 10px;
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-size: 15px;
+                                color: #fff;
+                                background: #437EEB;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            .text{
+                text-align: center;
+                background: $c1;
+                padding: 30px;
+                h6{
+                    @include fs(#fff,20px,700,$f1);
+                    margin-bottom: 10px;
+                }
+                p{
+                    @include fs(#ccc,15px,700,$f1);
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Team css end
+=========================================================*/
