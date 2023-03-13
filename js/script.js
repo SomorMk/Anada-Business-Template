@@ -2,9 +2,9 @@ $(function () {
     'use strict'
 
     // Preloader
-    // setTimeout(function () {
-    //     $('.preloader').fadeOut();
-    // }, 1000);
+    setTimeout(function () {
+        $('.preloader').fadeOut();
+    }, 1000);
 
     // Menu Fixing js start here
     var navOff = $('.navbar').offset().top;
@@ -34,7 +34,7 @@ $(function () {
     $('.service_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
@@ -45,21 +45,24 @@ $(function () {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: false,
-                    dots: true
+                    dots: true,
+                    autoplay: true
                 }
             },
             {
                 breakpoint: 767.98,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    autoplay: true
                 }
             },
             {
                 breakpoint: 575.98,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay: true
                 }
             }
         ]
