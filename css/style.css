@@ -281,7 +281,6 @@ ol {
                     Banner css Start
 =========================================================*/
 #banner {
-  height: 100vh;
   background: #101C3D;
 }
 #banner .banner_text {
